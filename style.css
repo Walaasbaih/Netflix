@@ -1,0 +1,133 @@
+* {
+	min-width: 320px;
+	margin: 0;
+}
+.container{
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+.srarchfilm{
+	font-size: 20px;
+   text-decoration: none;
+   color: #Fff;
+   background: #ffccff;
+   padding: 11px;
+   border-radius: 5px;
+
+}
+header{
+	background-image: url("img/net.jpeg");
+	border-bottom:10px solid #272727;
+	padding-bottom: 90px;
+}
+img{
+	height: 50px;
+}
+.h1{
+	padding-top: 150px;
+}
+.h1 h1{
+   text-align: center;
+   color: #Fff;
+   font-size: 3.125rem;
+}
+.h1 p{
+   text-align: center;
+   color: #Fff;
+   font-size: 2.125rem;
+}
+.center{
+	width: 650px;
+	text-align: center;
+	margin: 0 auto;
+}
+#sea{
+	height: 50px;
+   margin-top: 1px;
+   border: 1px solid #d7171f;
+   width: 17px;
+   color: #Fff;
+   background: #d7171f;
+   min-width: 70px;
+   border-radius: 12px;
+
+}
+#display{
+height: 50px;
+   margin-top: 1px;
+   border: 1px solid #d7171f;
+   color: #Fff;
+   background: #d7171f;
+   min-width: 70px;
+   border-radius: 12px;	
+}
+#fav{
+	height: 50px;
+   margin-top: 1px;
+   border: 1px solid #d7171f;
+   color: #Fff;
+   background: #d7171f;
+   min-width: 70px;
+   border-radius: 12px;
+
+}
+#remove{
+	height: 50px;
+   margin-top: 1px;
+   border: 1px solid #d7171f;
+   color: #Fff;
+   background: #d7171f;
+   min-width: 70px;
+   border-radius: 12px;
+}
+.search{
+	color:#fff;
+	font-size: 22px;
+	margin-top: 10px; 
+}
+.col1 h1 ,.col1 p{
+	color: #fff;
+}
+.col h1{
+	font-size: 42px;
+	font-weight: 700px;
+}
+.col p{
+	font-size: 30px;
+}
+._1{
+	background: #000;
+	padding-top: 105px;
+	padding-bottom: 105px;
+	border-bottom:10px solid #272727;
+}
+._container{
+	padding-right: 140px !important;
+	padding-left: 140px !important;
+}
+._container {
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+}
+
+._container a{
+	color: #fff;
+	text-decoration: none;
+}
+._container a{
+	color: #fff;
+	text-decoration: none;
+}
+ ._container h2 input{
+ 	width: 300px;
+	background: #303030;
+	padding-top: 15px;
+	padding-left: 35px;
+	margin-bottom: 1px;
+   color: #Fff;
+   font-size: 3.125rem;
+}
