@@ -16,26 +16,8 @@ var film15={namef:"Gretel & Hansel",actors:" Amy Ryan, Thomasin McKenzie, Gabrie
 
 var films =[film1,film2,film3,film4,film5,film6,film7,film8,film9,film10,film11,film12,film13,film14,film15]
 //
-console.log(films[3].namef)
-//addto 
-  //
-//fav list
-    $("#fav-list").click(function(event){	
-    $(event.target).css({'color':'red'});
-    $(event.target).attr("value","1")    
-});
-//Remove the select 
-    $("#remove").click(function(event){
-    $("li").each(function(){
-
-	  if($(this).val()=== 1 ) {
-      console.log("hi")
-		$(this).remove();
-    }
-});
-})
-    //favlist
-
+var vid =[{name:"Birds.Of.Prey",vid:"vd/v1.mp4"},{name:"bad.boys.for.life",vid:"vd/v2.mp4"},{name:".Limitless.",vid:"vd/v3.mp4"}]
+    
     //display
     function each(coll, f) {
   if (Array.isArray(coll)) {
@@ -55,8 +37,32 @@ function map(array, func) {
   });
   return acc;
 }
+$("#showfilm").click(function(e){
+$('#list-container').hide();
+$('#list-contai').show();
+  var contentDiv = document.getElementById('list-contai')
+    contentDiv.textContent=' ';
+   var f=map(vid,function(e){ 
+var subDiv=document.createElement('div');
+var a=document.createElement('a');
+var name=document.createElement('h1');
+var actors=document.createElement('p');
+var vid = document.createElement("VIDEO");
+subDiv.id='sub';
+name.textContent = e.name;
+vid.src = e.vid;
+vid.id='vid'
+subDiv.appendChild(vid);
+subDiv.appendChild(name);
+contentDiv.appendChild(subDiv);
+  })
+
+return f;
+  });
 
  $("#show").click(function(e){
+  $('#list-contai').hide();
+  $('#list-container').show();
   var contentDiv = document.getElementById('list-container')
     contentDiv.textContent='';
    var f=map(films,function(e){ 
@@ -69,7 +75,7 @@ subDiv.id='sub';
 name.textContent = e.namef;
 actors.textContent = e.actors;
 img.src = e.img;
-img.id='film'
+img.id='flam'
 subDiv.appendChild(img);
 subDiv.appendChild(name);
 subDiv.appendChild(actors);
@@ -95,29 +101,16 @@ var img = document.createElement('img');
 name.textContent = films[i].namef;
 actors.textContent = films[i].actors;
 img.src = films[i].img;
-img.id='film'
+img.id='flam'
 subDiv.appendChild(img);
 subDiv.appendChild(name);
 subDiv.appendChild(actors);
 contentDiv.appendChild(subDiv);
   
    }  
-
+$("#searchfilm").val('');
 }}
-$(".sea").click(function (){
 
-  if($("#searchfilm").val()){
-      var input = $("#searchfilm").val();
-         
-        var li =$("<li>"+ input+"</li>");
-        li.attr("id","task");
-        $("#fav-list").append(li);
-        $("#searchfilm").val('');
-    }
-     else {
-      alert("You must write something!")
-     }
-})
 function pop(){
        $('.div2').show();
    
@@ -158,9 +151,27 @@ $("#fav-list").click(function(event){
     }
 });
 })
-
-    /* $("#result").append(films[i].namef);
-      $("#result").append(films[i].actors);
-      $("#result").append(films[i].img);
-      console.log(films[i])
-    }*/
+$("#add-film").click(function (){
+  if($("#input-film").val()){
+      var input = $("#input-film").val();
+        var li =$("<li>"+input+"</li>");
+        li.attr("id","film");
+        $("#list-film").append(li);
+     $("#input-film").val('');}
+     else {
+      alert("You must write something!")
+     }
+})
+//selct to delet 
+    $("ul").click(function(event){  
+    $(event.target).css({'color':'#ffff1a'});
+    $(event.target).attr("value","1")
+});
+//Remove the select
+    $("#remove").click(function(event){
+    $("li").each(function(){
+  if($(this).val()=== 1 ) {
+    $(this).remove();
+    }
+});
+})

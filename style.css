@@ -9,19 +9,38 @@
 #searchfilm{
 	font-size: 20px;
    text-decoration: none;
-   color: #Fff;
    background: #ffccff;
    padding: 11px;
    border-radius: 5px;
 
+}
+#input-film{
+  font-size: 20px;
+   text-decoration: none;
+   background: #b3b3b3  ;
+   padding: 10px;
+   border-radius: 5px;
+   margin-right: 100px;
 }
 header{
 	background-image: url("img/net.jpeg");
 	border-bottom:10px solid #272727;
 	padding-bottom: 90px;
 }
+
+#flam{
+  width: 150px;
+  height: 200px;
+  
+}
+#vid{
+  width: 300px;
+  height: 400px;
+  
+}
 img{
-	height: 50px;
+	height: 100px;
+  width: 50px
 }
 .h1{
 	padding-top: 150px;
@@ -92,6 +111,15 @@ height: 50px;
    border-radius: 12px;
 
 }
+#showfilm{
+  height: 50px;
+   margin-top: 1px;
+   border: 1px solid #d7171f;
+   color: #Fff;
+   background: #d7171f;
+   min-width: 70px;
+   border-radius: 12px;
+}
 #remove{
 	height: 50px;
    margin-top: 1px;
@@ -100,6 +128,25 @@ height: 50px;
    background: #d7171f;
    min-width: 70px;
    border-radius: 12px;
+}
+#add-film{
+  height: 50px;
+   margin-top: 1px;
+   border: 1px solid #d7171f;
+   color: #Fff;
+   background: #d7171f;
+   min-width: 70px;
+   border-radius: 12px;
+}
+#main-header{
+  height: 50px;
+   margin-top: 1px;
+   border: 1px solid #d7171f;
+   color: #Fff;
+   background: #d7171f;
+   min-width: 70px;
+   border-radius: 12px;
+   text-align: center;
 }
 .search{
 	color:#fff;
@@ -126,6 +173,32 @@ height: 50px;
 	padding-right: 140px !important;
 	padding-left: 140px !important;
 }
+#film{
+  text-align: center;
+  color:black;
+  list-style-type: none;
+  display: block;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 1px;
+    background: #d7171f;
+    width: 50px;
+    border-radius: 12px;
+    margin-left: 500px;
+}
+#task{
+  text-align: center;
+  color:black;
+  list-style-type: none;
+  display: block;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 1px;
+    background: #d7171f;
+    border-radius: 12px;
+    margin-right: 100px;
+}
+
 ._container {
 	margin: 0 auto;
 	text-align: center;
@@ -135,6 +208,9 @@ height: 50px;
 ._container a{
 	color: #fff;
 	text-decoration: none;
+}
+body {
+  background-color: #ff9999;
 }
 ._container a{
 	color: #fff;
@@ -152,6 +228,10 @@ height: 50px;
 #list-container{
 text-align: center;
 }
+#list-contai{
+  text-align: center;
+
+}
 
 #sub{
   display: inline-block;
@@ -163,7 +243,6 @@ text-align: center;
 }
 #film{
   width: 150px;
-  height: 200px;
 	}
 
   .div2{
@@ -179,7 +258,7 @@ text-align: center;
 }
 
 .div2 > div {
-    background-color: #fff;
+    background-color: #ff6666;
     box-shadow: 10px 10px 60px #555;
     display: inline-block;
     height: auto;
@@ -204,7 +283,7 @@ text-align: center;
 }
 
 .div22 > div {
-    background-color: #fff;
+    background-color: #ff6666;
     box-shadow: 10px 10px 60px #555;
     display: inline-block;
     height: auto;
