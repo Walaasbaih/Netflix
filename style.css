@@ -186,6 +186,19 @@ height: 50px;
     border-radius: 12px;
     margin-left: 500px;
 }
+#newfilm{
+  text-align: center;
+  color:black;
+  list-style-type: none;
+  display: block;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 1px;
+    background: #d7171f;
+    width: 150px;
+    border-radius: 12px;
+    margin-left: 200px;
+}
 #task{
   text-align: center;
   color:black;
@@ -317,6 +330,18 @@ text-align: center;
      margin-right: 2px;
      position:absolute;
      bottom:0;
+     right:0;
+}
+#removefav{
+   height: 50px;
+   margin-top: 1px;
+   border: 1px solid #d7171f;
+   color: #Fff;
+   background: #d7171f;
+   min-width: 70px;
+   border-radius: 12px;
+   position:absolute;
+   bottom:0;
      right:0;
 }
 

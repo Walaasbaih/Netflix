@@ -110,7 +110,13 @@ contentDiv.appendChild(subDiv);
    }  
 $("#searchfilm").val('');
 }}
-
+//add to fav
+$("#addto").click(function(){
+        var li =$("<li>"+addtofav+"</li>");
+        li.attr("id","newfilm");
+        $("#fav-list").append(li);
+  
+})
 function pop(){
        $('.div2').show();
    
@@ -126,10 +132,6 @@ function pop(){
     }  
     function pop2(){
        $('.div22').show();
-   
-    $('.div22').click(function(){
-        $('.div22').hide();
-    });
     $('.bt').click(function(){
         $('.div22').hide();
         
@@ -137,16 +139,17 @@ function pop(){
      
      return false;
     }  
+    //select to delet
 $("#fav-list").click(function(event){ 
-    $(event.target).css({'color':'red'});
+    $(event.target).css({'color':'#ffff1a'});
     $(event.target).attr("value","1")    
 });
 //Remove the select 
-    $("#remove").click(function(event){
+    $("#removefav").click(function(event){
     $("li").each(function(){
 
     if($(this).val()=== 1 ) {
-      console.log("hi")
+     
     $(this).remove();
     }
 });
@@ -175,3 +178,5 @@ $("#add-film").click(function (){
     }
 });
 })
+
+
